@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_for_beginners_workshop/domain/transaction.dart';
-import 'package:flutter_for_beginners_workshop/presentation/widgets/transaction_widget.dart';
+import 'package:flutter_for_beginners_workshop/presentation/solution/widgets/transaction_card.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../widget_tester_extension.dart';
 
 main() {
-  group(TransactionWidget, () {
+  group(TransactionCard, () {
     final transaction = Transaction.dummyTransactions.first;
 
     Future<void> pumpTransactionWidget(WidgetTester tester) async {
       return await tester.pumpMaterialApp(
-        TransactionWidget(transaction: transaction),
+        TransactionCard(transaction: transaction),
       );
     }
 
@@ -22,8 +22,7 @@ main() {
 
       expect(
         (tester.firstWidget(avatar) as CircleAvatar).backgroundImage,
-        NetworkImage(
-            '${TransactionWidget.avatarBaseUrl}${transaction.fromName}'),
+        NetworkImage('${TransactionCard.avatarBaseUrl}${transaction.fromName}'),
       );
     });
 
@@ -34,7 +33,7 @@ main() {
 
       expect(
         (tester.firstWidget(avatar) as CircleAvatar).backgroundImage,
-        NetworkImage('${TransactionWidget.avatarBaseUrl}${transaction.toName}'),
+        NetworkImage('${TransactionCard.avatarBaseUrl}${transaction.toName}'),
       );
     });
 

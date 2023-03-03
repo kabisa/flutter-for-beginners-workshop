@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_for_beginners_workshop/presentation/home_screen.dart';
+import 'package:flutter_for_beginners_workshop/presentation/exercise/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

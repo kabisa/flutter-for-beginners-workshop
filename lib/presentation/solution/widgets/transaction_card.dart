@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_for_beginners_workshop/domain/transaction.dart';
 
-class TransactionWidget extends StatelessWidget {
-  const TransactionWidget({
+class TransactionCard extends StatelessWidget {
+  const TransactionCard({
     required this.transaction,
     super.key,
   });

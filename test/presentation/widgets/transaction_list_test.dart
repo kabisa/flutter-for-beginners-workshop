@@ -1,6 +1,6 @@
 import 'package:flutter_for_beginners_workshop/domain/transaction.dart';
-import 'package:flutter_for_beginners_workshop/presentation/widgets/transaction_list.dart';
-import 'package:flutter_for_beginners_workshop/presentation/widgets/transaction_widget.dart';
+import 'package:flutter_for_beginners_workshop/presentation/solution/widgets/transaction_list.dart';
+import 'package:flutter_for_beginners_workshop/presentation/solution/widgets/transaction_card.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockingjay/mockingjay.dart';
 import 'package:mocktail_image_network/mocktail_image_network.dart';
@@ -29,7 +29,7 @@ main() {
       );
 
       await tester.fling(
-        find.byType(TransactionWidget).first,
+        find.byType(TransactionCard).first,
         const Offset(0.0, 300.0),
         1000.0,
       );
@@ -50,7 +50,7 @@ main() {
       );
 
       expect(
-        find.byType(TransactionWidget),
+        find.byType(TransactionCard),
         findsNWidgets(Transaction.dummyTransactions.length),
       );
     });

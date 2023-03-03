@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_for_beginners_workshop/domain/transaction.dart';
-import 'package:flutter_for_beginners_workshop/presentation/widgets/transaction_widget.dart';
+import 'package:flutter_for_beginners_workshop/presentation/solution/widgets/transaction_card.dart';
 
 class TransactionList extends StatelessWidget {
   const TransactionList({
@@ -20,7 +20,7 @@ class TransactionList extends StatelessWidget {
       child: ListView.separated(
         padding: const EdgeInsets.all(8),
         itemCount: transactions.length,
-        itemBuilder: (context, index) => TransactionWidget(
+        itemBuilder: (context, index) => TransactionCard(
           transaction: transactions[index],
         ),
         separatorBuilder: (context, _) => const SizedBox(height: 16),
