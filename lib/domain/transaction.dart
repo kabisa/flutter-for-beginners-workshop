@@ -39,35 +39,42 @@ class Transaction {
 
   static final List<Transaction> dummyTransactions = [
     Transaction(
-        fromName: "Kamryn Quin",
-        toName: "Neely Florence",
-        createdAt: DateTime.parse("2023-01-03T15:40:49.937988+0200"),
-        kudos: 25,
-        note: "being like sunshine on a rainy day."),
+      fromName: "Emmerson Jules",
+      toName: "Chris Campbell",
+      createdAt: DateTime.parse("2023-01-31T12:13:48.90337+0200"),
+      kudos: 10,
+      note: "being even better than a unicorn, because you're real.",
+    ),
     Transaction(
-        fromName: "Jamey Gayle",
-        toName: "Grier London",
-        createdAt: DateTime.parse("2023-01-02 14:37:40.669265+0200"),
-        kudos: 25,
-        note: "bringing out the best in other people."),
+      fromName: "Kerry Kelcey",
+      toName: "Leighton Dezi",
+      createdAt: DateTime.parse("2023-01-31T15:22:47.209402+0200"),
+      kudos: 20,
+      note: "you always know just what to say.",
+    ),
     Transaction(
-        fromName: "Martie Esme",
-        toName: "Vivian Casey",
-        createdAt: DateTime.parse("2023-01-02T09:56:52.285789+0200"),
-        kudos: 10,
-        note:
-            "that thing you don’t like about yourself is what makes you so interesting."),
+      fromName: "Martie Esme",
+      toName: "Vivian Casey",
+      createdAt: DateTime.parse(
+        "2023-01-02T09:56:52.285789+0200",
+      ),
+      kudos: 10,
+      note:
+          "that thing you don’t like about yourself is what makes you so interesting.",
+    ),
     Transaction(
-        fromName: "Kerry Kelcey",
-        toName: "Leighton Dezi",
-        createdAt: DateTime.parse("2023-01-31T15:22:47.209402+0200"),
-        kudos: 20,
-        note: "you always know just what to say."),
+      fromName: "Jamey Gayle",
+      toName: "Grier London",
+      createdAt: DateTime.parse("2023-01-02 14:37:40.669265+0200"),
+      kudos: 25,
+      note: "bringing out the best in other people.",
+    ),
     Transaction(
-        fromName: "Emmerson Jules",
-        toName: "Chris Campbell",
-        createdAt: DateTime.parse("2023-01-31T12:13:48.90337+0200"),
-        kudos: 10,
-        note: "being even better than a unicorn, because you're real.")
+      fromName: "Kamryn Quin",
+      toName: "Neely Florence",
+      createdAt: DateTime.parse("2023-01-03T15:40:49.937988+0200"),
+      kudos: 25,
+      note: "being like sunshine on a rainy day.",
+    ),
   ];
 }
