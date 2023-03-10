@@ -64,26 +64,38 @@ class TransactionForm extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 10),
               child: ElevatedButton(
-                onPressed: () {
-                  if (!_formKey.currentState!.validate()) return;
-
-                  _formKey.currentState!.save();
-
-                  Navigator.of(context).pop(
-                    Transaction(
-                      kudos: kudos!,
-                      fromName: 'Me',
-                      toName: receivers!,
-                      note: message!,
-                      createdAt: DateTime.now(),
-                    ),
-                  );
-                },
+                onPressed: () => _onSubmitPressed(
+                  context,
+                  kudos: kudos,
+                  receivers: receivers,
+                  message: message,
+                ),
                 child: const Text("Submit"),
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  void _onSubmitPressed(
+    BuildContext context, {
+    required int? kudos,
+    required String? receivers,
+    required String? message,
+  }) {
+    if (!_formKey.currentState!.validate()) return;
+
+    _formKey.currentState!.save();
+
+    Navigator.of(context).pop(
+      Transaction(
+        kudos: kudos!,
+        fromName: 'Me',
+        toName: receivers!,
+        note: message!,
+        createdAt: DateTime.now(),
       ),
     );
   }

@@ -17,7 +17,7 @@ import 'package:flutter_for_beginners_workshop/presentation/exercise/home_screen
 /// 🔦 You can use the following widgets (hover in your IDE to get more info):
 /// [Form], [TextFormField], [InputDecoration]
 ///
-/// ⚠️ Make sure that we can only submit the form when the form is valid
+/// ⚠️ Make sure that we can only submit the form when the form input is valid
 /// Use the [TransactionValidators] for this.
 class TransactionForm extends StatelessWidget {
   const TransactionForm({super.key});

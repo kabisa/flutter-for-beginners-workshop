@@ -13,7 +13,7 @@ import 'package:flutter_for_beginners_workshop/presentation/exercise/widgets/tra
 /// time to start working with local state!
 ///
 /// ❓We haven't discussed navigation yet. To return data from the [showModalBottomSheet]
-/// callback add the following to the callback where you want to submit your form:
+/// callback add the following to the callback when you submit your form to close the modal and return the transaction.
 /// ```dart
 /// Navigator.of(context).pop(/*return your transaction here*/);
 /// ```
@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 💡 Use this transaction and pass this down to your TransactionCard to see your widget in action
+    // 💡 For exercise 1 use this transaction and pass this down to your TransactionCard to see your widget in action
     // ```final transaction = Transaction.dummyTransactions.first```;
 
     return Scaffold(
@@ -37,6 +37,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: const [TransactionCard()],
       ),
+      floatingActionButton: null,
     );
   }
 }
