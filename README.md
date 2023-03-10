@@ -94,6 +94,7 @@ The mockups show what we need to build:
 
 Based on the mockup we will need the following Flutter widgets:
 
+* [FloatingActionButton](https://api.flutter.dev/flutter/material/FloatingActionButton-class.html)
 * [Form](https://api.flutter.dev/flutter/widgets/Form-class.html)
 * [FormValidators](https://api.flutter.dev/flutter/widgets/FormFieldValidator.html)
 * [TextFormField](https://api.flutter.dev/flutter/material/TextFormField-class.html)
