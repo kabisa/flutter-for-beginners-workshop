@@ -152,3 +152,8 @@ Get started with [implicit animations](https://docs.flutter.dev/development/ui/a
 
 Replace your current local state implementation with a state management solution like [provider](https://pub.dev/packages/provider). Add the dependency to your `pubspec.yaml` and get started!
 
+#### Theming
+
+MaterialApp's use [ThemeData](https://api.flutter.dev/flutter/material/ThemeData-class.html) to set global theming. Have a look at the possibilies and play around with the theme
+in the [theme file](/lib/theme/theme.dart). More info and examples can be found in the [docs](https://docs.flutter.dev/cookbook/design/themes).
+
