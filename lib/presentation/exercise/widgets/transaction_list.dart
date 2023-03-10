@@ -11,7 +11,7 @@ import 'package:flutter_for_beginners_workshop/presentation/exercise/widgets/tra
 ///
 /// 💿 Use [Transaction.dummyTransactions] as your data input
 ///
-/// ⏳ You got time left? Have a look at [ListView.builder] and [ListView.separated].
+/// ⏳ You're feeling adventurous? Have a look at [ListView.builder] and [ListView.separated].
 
 class TransactionList extends StatelessWidget {
   const TransactionList({super.key});

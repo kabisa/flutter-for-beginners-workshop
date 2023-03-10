@@ -50,7 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> _showTransactionForm(BuildContext context) async {
     final transaction = await showModalBottomSheet<Transaction>(
       context: context,
-      builder: (_) => TransactionForm(),
+      builder: (_) => const TransactionForm(),
+      isScrollControlled: true,
     );
 
     if (transaction != null) {

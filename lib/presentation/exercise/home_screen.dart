@@ -3,7 +3,7 @@ import 'package:flutter_for_beginners_workshop/presentation/exercise/widgets/tra
 
 /// 4️⃣ Exercise 4: Saving new transactions (in memory)
 ///
-/// 🙋🏽‍ As a user, I want to save new transactions, so I can give kudos to others
+/// 🙋🏽‍ As a user, I want to save new transactions on submit and display them in the transaction feed
 ///
 /// 👩‍💻 By now, your home screen should already have the ability to show a list of
 /// kudo transactions and a way to open the transaction form. Now it is time to

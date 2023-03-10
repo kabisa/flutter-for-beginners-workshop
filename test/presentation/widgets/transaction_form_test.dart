@@ -137,6 +137,7 @@ main() {
       await tester.enterText(messageTextFormField, message);
       await tester.pumpAndSettle();
 
+      await tester.pump(const Duration(seconds: 2));
       await tester.tap(find.widgetWithText(ElevatedButton, 'Submit'));
 
       verify(
