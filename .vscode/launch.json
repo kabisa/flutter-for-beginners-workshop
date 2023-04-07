@@ -5,25 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "exercise",
+            "name": "flutter-for-beginners-workshop",
             "request": "launch",
-            "type": "dart",
-            "program": "lib/main_exercise.dart",
+            "type": "dart"
         },
         {
-            "name": "solution",
-            "request": "launch",
-            "type": "dart",
-            "program": "lib/main_solution.dart",
-        },
-        {
-            "name": "flutter_for_beginners_workshop (profile mode)",
+            "name": "flutter-for-beginners-workshop (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "flutter_for_beginners_workshop (release mode)",
+            "name": "flutter-for-beginners-workshop (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
